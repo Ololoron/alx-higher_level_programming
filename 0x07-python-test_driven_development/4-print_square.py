@@ -5,6 +5,7 @@ Attributes:
     print_square: function that prints a square with the character #.
 """
 
+
 def print_square(size):
     """Print a square with the character #.
 
