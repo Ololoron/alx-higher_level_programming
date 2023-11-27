@@ -2,6 +2,7 @@
 """Module defining the class student
 """
 
+
 class Student:
     """Class that defines properties of a student.
     """
