@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module containing a script that reads stdin lin by line and 
+"""Module containing a script that reads stdin lin by line and
 computes metercs
 Each 10 lines and after a keyboard interruption (CTR + C),
 prints those statistics since the begining:
@@ -7,7 +7,7 @@ Total file size: File size: <total size>
 Where is the sum of all previous (see input format above)
 Number of lines by status code:
 possible status code: 200, 301, 400, 401, 403, 404, 405, and 500
-if a status code does'nt appear, don't print anything for this 
+if a status code does'nt appear, don't print anything for this
 code
 format: <status code>: <number>
 Status codes should be printed in ascending order
@@ -19,7 +19,7 @@ import sys
 file_size = 0
 status_tally = {"200": 0, "301": 0, "400": 0, "401": 0,
                 "403": 0, "404": 0, "405": 0, "500": 0}
-i = 0 
+i = 0
 try:
     for line in sys.stdin:
         tokens = line.split()
