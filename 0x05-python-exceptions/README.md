@@ -1,7 +1,8 @@
-###Tasks
-0. Safe list printing
-mandatory
-Write a function that prints x elements of a list.
+# Python Exceptions 
+## Tasks
+### 0. Safe list printing
+#### Mandatory
+__Write a function that prints x elements of a list.__
 
 Prototype: def safe_print_list(my_list=[], x=0):
 my_list can contain any type (integer, string, etc.)
@@ -12,6 +13,7 @@ Returns the real number of elements printed
 You have to use try: / except:
 You are not allowed to import any module
 You are not allowed to use len()
+'''
 guillaume@ubuntu:~/0x05$ cat 0-main.py
 #!/usr/bin/python3
 safe_print_list = __import__('0-safe_print_list').safe_print_list
@@ -33,15 +35,11 @@ nb_print: 5
 12345
 nb_print: 5
 guillaume@ubuntu:~/0x05$ 
-Repo:
-
-GitHub repository: alx-higher_level_programming
-Directory: 0x05-python-exceptions
-File: 0-safe_print_list.py
+'''
    
-1. Safe printing of an integers list
-mandatory
-Write a function that prints an integer with "{:d}".format().
+### 1. Safe printing of an integers list
+#### Mandatory
+__Write a function that prints an integer with "{:d}".format().__
 
 Prototype: def safe_print_integer(value):
 value can be any type (integer, string, etc.)
@@ -53,6 +51,7 @@ You have to use "{:d}".format() to print as integer
 You are not allowed to import any module
 You are not allowed to use type()
 guillaume@ubuntu:~/0x05$ cat 1-main.py
+''' py
 #!/usr/bin/python3
 safe_print_integer = __import__('1-safe_print_integer').safe_print_integer
 
@@ -70,12 +69,14 @@ value = "School"
 has_been_print = safe_print_integer(value)
 if not has_been_print:
     print("{} is not an integer".format(value))
-
+'''
+'''
 guillaume@ubuntu:~/0x05$ ./1-main.py
 89
 -89
 School is not an integer
 guillaume@ubuntu:~/0x05$ 
+'''
 Repo:
 
 GitHub repository: alx-higher_level_programming
