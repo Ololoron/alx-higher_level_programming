@@ -1,4 +1,7 @@
-# Python Exceptions 
+# Python Exceptions
+## Author 
+[rondavid](https://rondavid209@gmail.com)
+
 ## Tasks
 ### 0. Safe list printing
 #### Mandatory
