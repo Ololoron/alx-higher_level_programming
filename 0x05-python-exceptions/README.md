@@ -24,7 +24,7 @@ nb_print = safe_print_list(my_list, 2)
 print("nb_print: {:d}".format(nb_print))
 nb_print = safe_print_list(my_list, len(my_list))
 print("nb_print: {:d}".format(nb_print))
-nb_print = safe_print_list(my_list, len(my_list) + 2)
+nb_print = safe_print_list(my_list, len(my_list) + i2)
 print("nb_print: {:d}".format(nb_print))
 
 guillaume@ubuntu:~/0x05$ ./0-main.py
@@ -83,21 +83,21 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x05-python-exceptions
 File: 1-safe_print_integer.py
    
-2. Print and count integers
-mandatory
-Write a function that prints the first x elements of a list and only integers.
+### 2. Print and count integers
+#### Mandatory
+__Write a function that prints the first x elements of a list and only integers.__
 
-Prototype: def safe_print_list_integers(my_list=[], x=0):
-my_list can contain any type (integer, string, etc.)
-All integers have to be printed on the same line followed by a new line - other type of value in the list must be skipped (in silence).
-x represents the number of elements to access in my_list
-x can be bigger than the length of my_list - if it’s the case, an exception is expected to occur
-Returns the real number of integers printed
-You have to use try: / except:
-You have to use "{:d}".format() to print an integer
-You are not allowed to import any module
-You are not allowed to use len()
-guillaume@ubuntu:~/0x05$ cat 2-main.py
++ Prototype: `def safe_print_list_integers(my_list=[], x=0):`
++ my_list can contain any type (integer, string, etc.)
++ All integers have to be printed on the same line followed by a new line - other type of value in the list must be skipped (in silence).
++ x represents the number of elements to access in my_list
++ x can be bigger than the length of my_list - if it’s the case, an exception is expected to occur
++ Returns the real number of integers printed
++ You have to use try: / except:
++ You have to use "{:d}".format() to print an integer
++ You are not allowed to import any module
++ You are not allowed to use len()
+```guillaume@ubuntu:~/0x05$ cat 2-main.py
 #!/usr/bin/python3
 safe_print_list_integers = \
     __import__('2-safe_print_list_integers').safe_print_list_integers
@@ -126,24 +126,19 @@ nb_print: 5
     print("{:d}".format(my_list[i]), end="")
 IndexError: list index out of range
 guillaume@ubuntu:~/0x05$ 
-Repo:
+```
+### 3. Integers division with debug
+#### Mandatory
+__Write a function that divides 2 integers and prints the result.__
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x05-python-exceptions
-File: 2-safe_print_list_integers.py
-   
-3. Integers division with debug
-mandatory
-Write a function that divides 2 integers and prints the result.
-
-Prototype: def safe_print_division(a, b):
-You can assume that a and b are integers
-The result of the division should print on the finally: section preceded by Inside result:
-Returns the value of the division, otherwise: None
-You have to use try: / except: / finally:
-You have to use "{}".format() to print the result
-You are not allowed to import any module
-guillaume@ubuntu:~/0x05$ cat 3-main.py
++ Prototype: `def safe_print_division(a, b):`
++ You can assume that a and b are integers
++ The result of the division should print on the finally: section preceded by Inside result:
++ Returns the value of the division, otherwise: None
++ You have to use try: / except: / finally:
++ You have to use "{}".format() to print the result
++ You are not allowed to import any module
+```guillaume@ubuntu:~/0x05$ cat 3-main.py
 #!/usr/bin/python3
 safe_print_division = __import__('3-safe_print_division').safe_print_division
 
@@ -163,12 +158,7 @@ Inside result: 6.0
 Inside result: None
 12 / 0 = None
 guillaume@ubuntu:~/0x05$ 
-Repo:
-
-GitHub repository: alx-higher_level_programming
-Directory: 0x05-python-exceptions
-File: 3-safe_print_division.py
-   
+```   
 4. Divide a list
 mandatory
 Write a function that divides element by element 2 lists.
